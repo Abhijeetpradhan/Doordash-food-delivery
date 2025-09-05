@@ -48,6 +48,42 @@
     background-color: tomato;
     border-radius: 5px;
     top: -8px;
-    right: -8px;
+    right: -8px;    
+}
+
+@media (max-width:1050px){
+    .navbar .logo{
+        width: 95px;
+    }
+    .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 25px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar button{
+        font-size: 15px;
+    }
+}
+@media (max-width:900px){
+    .navbar .logo{
+        width: 85px;
+    }
+    .navbar-menu{
+        gap: 17px;
+        font-size: 14px;
+    }
+    .navbar button{
+        font-size: 12px;
+    }
     
+}
+@media (max-width:750px){
+    .navbar-menu{
+        display: none;
+    }
 }

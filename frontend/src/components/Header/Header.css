@@ -72,3 +72,51 @@
     background-color: #e23744;
     color: white;
   }
+
+  @media (max-width:750px){
+    .header-content h2{
+      font-size: 30px;
+    }
+    .header-content h3{
+      font-size: 15px;
+    }
+    .header-content p{
+      font-size: 15px;
+    }
+    .header-content button{
+      padding: 8px 18px;
+      font-size: 14px;
+    }
+  }
+  @media (max-width:580px){
+  .header-content h2{
+    font-size: 25px;
+  }
+  .header-content p{
+    display: none;
+  }
+  .header-content button{
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  }
+
+  @media (max-width:380px){
+    .header{
+      height: 50vw;
+  }
+  .header-content{
+    max-width: 55%;
+    bottom: 35%;
+  }
+  .header-content h2{
+    font-size: 25px;
+  }
+  .header-content p{
+    display: none;
+  }
+  .header-content button{
+    padding: 8px 8px;
+    font-size: 12px;
+  }
+  }

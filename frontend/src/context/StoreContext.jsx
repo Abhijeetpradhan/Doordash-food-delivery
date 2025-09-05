@@ -7,8 +7,6 @@ const StoreContextProvider = (props)=>{
     const [cartItems,setCartItems] = useState({});
 
     const addTocart = (id)=>{
-        console.log("call here :",id);
-        
         setCartItems((prev)=>(
             {
                 ...prev , [id] : prev[id] ? prev[id] + 1 : 1

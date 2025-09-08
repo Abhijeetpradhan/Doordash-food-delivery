@@ -6,6 +6,8 @@ const StoreContextProvider = (props)=>{
 
     const [cartItems,setCartItems] = useState({});
 
+    const [category,setCategory] = useState('All');
+
     const addTocart = (id)=>{
         setCartItems((prev)=>(
             {
@@ -29,7 +31,7 @@ const StoreContextProvider = (props)=>{
     }
 
 
-    const contextValue = {food_list,cartItems,addTocart,removeFromCart}
+    const contextValue = {food_list,cartItems,addTocart,removeFromCart,category,setCategory}
     return(
         <StoreContext.Provider value={contextValue}>
             {props.children}

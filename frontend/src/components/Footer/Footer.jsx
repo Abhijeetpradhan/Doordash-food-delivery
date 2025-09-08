@@ -14,7 +14,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div className="footer-container">
         {/* Column 1 - Company Info */}
         <div className="footer-column">

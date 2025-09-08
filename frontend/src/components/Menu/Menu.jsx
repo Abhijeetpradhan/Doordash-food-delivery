@@ -1,6 +1,7 @@
 import React from 'react'
 import './Menu.css';
 import { menu_list } from '../../assets/assets';
+import FoodDisplay from '../FoodDisplay/FoodDisplay';
 
 const Menu = (props) => {
 
@@ -22,6 +23,8 @@ const Menu = (props) => {
         </div>
 
         <hr />
+
+        <FoodDisplay category={props.category} />
     </div>
   )
 }

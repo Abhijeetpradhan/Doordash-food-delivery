@@ -1,11 +1,11 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./Fooditem.css";
 import { assets } from "../../assets/assets";
 import { StoreContext } from "../../context/Context";
 
 const FoodItem = ({ id, name, image, price, description }) => {
-    console.log("name==>",name);
-    console.log("image",image);
+    // console.log("name==>",name);
+    // console.log("image",image);
     const {cartItems,addTocart,removeFromCart} = useContext(StoreContext);
     const itemCount = cartItems[id] || 0;  
     

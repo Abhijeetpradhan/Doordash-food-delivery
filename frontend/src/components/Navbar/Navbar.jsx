@@ -9,8 +9,8 @@ const Navbar = ({setShowSignIn}) => {
 
   return (
     <div className='navbar'>
-        {/* <Link to='/'><img src={assets.logo2} alt="" className='logo' /></Link> */}
-        <Link to='/'>Eatsy</Link>
+        <Link to='/'><img src={assets.logo2} alt="" className='logo' /></Link>
+        {/* <Link to='/'>Eatsy</Link> */}
         <ul className='navbar-menu'>
           <Link to='/' onClick={()=>(setMenu("Home"))} className={menu === "Home" ? "active":""}>Home</Link>
           <Link to='/menu' onClick={()=>(setMenu("Menu"))} className={menu === "Menu" ? "active":""}>Menu</Link>
